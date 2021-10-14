@@ -34,5 +34,3 @@ def play(difficulty):
     user_list = get_list_from_user(difficulty)
     result = is_list_equal(generated_list, user_list)
     return result
-
-# test

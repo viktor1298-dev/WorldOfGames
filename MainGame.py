@@ -1,6 +1,6 @@
 from Live import welcome, load_game
-from e2e import main_function
+from tests import e2e
 
 welcome()
 load_game()
-main_function()
+e2e.main_function()

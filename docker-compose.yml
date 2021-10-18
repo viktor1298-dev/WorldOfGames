@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  world_of_games:
+#    container_name: WorldOfGames
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/test
+#      dockerfile: Dockerfile

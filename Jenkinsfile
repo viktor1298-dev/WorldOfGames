@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('GIT Pull'){
+        stage('GIT Pull') {
             steps {
-                git clone https://github.com/viktor1298-dev/WorldOfGames
+                git 'https://github.com/viktor1298-dev/WorldOfGames'
             }
         }
         stage('Build'){

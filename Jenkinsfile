@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Build'){
             steps {
-                bat "docker compose build"
+                bat "docker-compose build"
             }
         }
         stage('Run'){
             steps {
-                bat "docker compose up -d"
+                bat "docker-compose up -d"
             }
         }
         stage ('Test'){

@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('GIT Pull'){
             steps {
-                bat "git clone https://github.com/viktor1298-dev/WorldOfGames"
+                git clone https://github.com/viktor1298-dev/WorldOfGames
             }
         }
         stage('Build'){

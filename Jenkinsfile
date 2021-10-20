@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('GIT Pull') {
             steps {
-                git 'https://github.com/viktor1298-dev/WorldOfGames'
+                git branch: 'main', url: 'https://github.com/viktor1298-dev/WorldOfGames'
             }
         }
         stage('Build'){

@@ -18,9 +18,8 @@ pipeline {
         }
         stage ('Test'){
             steps {
-                    bat "cd tests"
-//                 bat "cd WorldOfGames/tests"
-                    bat "py e2e.py"
+                    bat """cd tests
+                    py e2e.py"""
             }
         }
         stage('Finalize') {

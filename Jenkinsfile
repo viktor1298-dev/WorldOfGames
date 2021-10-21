@@ -19,7 +19,7 @@ pipeline {
         stage ('Test'){
             steps {
                     bat """cd tests
-                    py e2e.py"""
+                    python -c 'import e2e; e2e.main_function()'"""
             }
         }
         stage('Finalize') {

@@ -4,4 +4,4 @@ services:
     build: .
     image: viktor1298/project_world_of_games
     ports:
-      - "8777:8777"
+      - "8777:5000"

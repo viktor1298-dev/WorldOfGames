@@ -18,7 +18,7 @@ pipeline {
         }
         stage ('Test'){
             steps {
-                bat "cd ./tests"
+                bat "cd /tests"
                 bat "py e2e.py"
             }
         }

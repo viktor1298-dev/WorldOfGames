@@ -4,7 +4,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 
 
-
 def test_scores_service():
     svc = Service(ChromeDriverManager().install())
     my_driver = webdriver.Chrome(service=svc)
@@ -23,3 +22,7 @@ def main_function():
         exit(0)
     else:
         exit(-1)
+
+
+if __name__ == '__main__':
+    main_function()

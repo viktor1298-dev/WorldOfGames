@@ -24,7 +24,8 @@ pipeline {
         }
         stage('Finalize') {
             steps {
-                bat "docker compose down"
+                bat """docker compose down
+                docker compose push"""
             }
         }
     }
